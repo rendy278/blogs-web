@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer styles {
+  .wrapper {
+    @apply w-[90%] m-auto max-w-[1400px];
+  }
+
+  .mobile-menu {
+    @apply absolute top-16 px-10 right-5 rounded-md flex justify-center items-center flex-col z-10 bg-sky-400 dark:bg-dark  text-white gap-5 py-5 transition-all duration-500  ease-in;
+  }
+
+  .themeToggle {
+    @apply relative w-16 h-8 flex items-center bg-white dark:bg-gray-900 cursor-pointer rounded-full p-1;
+  }
+
+  .ball {
+    @apply absolute bg-white dark:bg-medium w-6 h-6 rounded-full shadow-md transform transition-transform duration-500 ease-in;
+  }
+}
